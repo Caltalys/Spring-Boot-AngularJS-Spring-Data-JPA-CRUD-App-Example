@@ -7,7 +7,6 @@
         <link href="css/app.css" rel="stylesheet"/>
     </head>
     <body>
-
         <div ui-view></div>
         <script src="js/lib/angular.min.js" ></script>
         <script src="js/lib/angular-ui-router.min.js" ></script>

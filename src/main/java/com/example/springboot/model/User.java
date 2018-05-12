@@ -1,4 +1,4 @@
-package com.websystique.springboot.model;
+package com.example.springboot.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -8,6 +8,8 @@ import java.io.Serializable;
 @Entity
 @Table(name="APP_USER")
 public class User implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)

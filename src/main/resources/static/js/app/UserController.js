@@ -63,6 +63,7 @@ angular.module('crudApp').controller('UserController',
                         self.successMessage='User updated successfully';
                         self.errorMessage='';
                         self.done = true;
+                        self.user = {};
                         $scope.myForm.$setPristine();
                     },
                     function(errResponse){

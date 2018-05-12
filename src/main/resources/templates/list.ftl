@@ -21,7 +21,8 @@
 	                    <div class="form-group col-md-12">
 	                        <label class="col-md-2 control-lable" for="age">Age</label>
 	                        <div class="col-md-7">
-	                            <input type="text" ng-model="ctrl.user.age" id="age" class="form-control input-sm" placeholder="Enter your Age." required ng-pattern="ctrl.onlyIntegers"/>
+	                            <input type="text" ng-model="ctrl.user.age" id="age" name="age" class="form-control input-sm" placeholder="Enter your Age." required ng-pattern="ctrl.onlyIntegers"/>
+	                            <span style="color:red" ng-show="myForm.age.$error.pattern">Only number are allowed</span>
 	                        </div>
 	                    </div>
 	                </div>
@@ -30,7 +31,8 @@
 	                    <div class="form-group col-md-12">
 	                        <label class="col-md-2 control-lable" for="salary">Salary</label>
 	                        <div class="col-md-7">
-	                            <input type="text" ng-model="ctrl.user.salary" id="salary" class="form-control input-sm" placeholder="Enter your Salary." required ng-pattern="ctrl.onlyNumbers"/>
+	                            <input type="text" ng-model="ctrl.user.salary" id="salary" name="salary" class="form-control input-sm" placeholder="Enter your Salary." required ng-pattern="ctrl.onlyNumbers"/>
+	                        	<span style="color:red" ng-show="myForm.salary.$error.pattern">Only number are allowed</span>
 	                        </div>
 	                    </div>
 	                </div>
