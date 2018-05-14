@@ -19,14 +19,22 @@ management:
   security:
     enabled: false
   endpoints:
+    jmx:
+      domain: com.example.springboot
+      unique-names: true
     web:
       exposure:
         include: "*"
 
 spring:
+  application:
+    name: SpringBootCRUDApp
   boot:
     admin:
-      url: http://localhost:8081
+      url: http://localhost:9763/${spring.application.name}
+      context-path: /admin
+      client:
+        service-url: http://localhost:9763/${spring.application.name}
   jackson:
     serialization:
       INDENT_OUTPUT: true
