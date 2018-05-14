@@ -8,11 +8,8 @@ import org.springframework.context.annotation.Import;
 
 import com.example.springboot.configuration.JpaConfiguration;
 
-import de.codecentric.boot.admin.config.EnableAdminServer;
-
 
 @Import(JpaConfiguration.class)
-@EnableAdminServer
 @SpringBootApplication(scanBasePackages={"com.example.springboot"})// same as @Configuration @EnableAutoConfiguration @ComponentScan
 public class SpringBootCRUDApp extends SpringBootServletInitializer{
 
